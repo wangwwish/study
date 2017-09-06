@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/wwish/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.9/87372d9e2323313bec24b09a325bfea8ae0eb867/aspectjrt-1.8.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="87372d9e2323313bec24b09a325bfea8ae0eb867">
+        <dex dex="/Users/wwish/Documents/code-test/Demo/app/build/intermediates/pre-dexed/debug/aspectjrt-1.8.9_a1c50d97139d85f1c37ad2d2108aef2644f0dc93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wwish/Documents/code-test/Demo/aspectj/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6b16791228aa2d0160bd9b8cd0227cd593345b5">
+        <dex dex="/Users/wwish/Documents/code-test/Demo/app/build/intermediates/pre-dexed/debug/classes_9692ee94a46e4e058b5e39895a1d2c1ab81a41ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/wwish/Documents/code-test/Demo/frame/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95eb278db951e8bdd35f8f6c4e84b34ba398c898">
+        <dex dex="/Users/wwish/Documents/code-test/Demo/app/build/intermediates/pre-dexed/debug/classes_16afc12afd8caa098984574c1164123c24d57435.jar" />
+    </item>
+
+</items>

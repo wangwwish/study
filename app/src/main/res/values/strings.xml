@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Demo</string>
     <string name="tab_name">tab</string>
+    <string name="first_fragment_item_screen">屏幕信息</string>
+    <string name="first_fragment_item_system">系统</string>
+    <string name="first_fragment_item_hardware">硬件</string>
+    <string name="first_fragment_item_cpu">CPU</string>
+    <string name="first_fragment_item_network">网络信息</string>
+    <string name="first_fragment_item_device_id">本机ID</string>
 </resources>

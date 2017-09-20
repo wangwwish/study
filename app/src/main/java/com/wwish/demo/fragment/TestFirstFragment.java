@@ -10,6 +10,7 @@ import android.widget.Button;
 
 import com.wwish.demo.R;
 import com.wwish.demo.activity.HomePageActivity;
+import com.wwish.demo.utils.DeviceUtil;
 import com.wwish.frame.fragment.BaseFragment;
 
 /**
@@ -18,14 +19,22 @@ import com.wwish.frame.fragment.BaseFragment;
 
 public class TestFirstFragment extends BaseFragment implements View.OnClickListener{
 
-    private Button button;
+    private Button screenButton,systemButton,hardwareButton,cpuButton,networkButton,deviceIdButton;
     private Context context;
     @Override
     protected View createView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         context=getHostActivity();
         View view =  inflater.inflate(R.layout.fragment_first, container, false);
-        button=(Button)view.findViewById(R.id.btn_test);
-        button.setOnClickListener(this);
+        screenButton=(Button)view.findViewById(R.id.btn_screen);
+        screenButton.setOnClickListener(this);
+        systemButton=(Button)view.findViewById(R.id.btn_system);
+        systemButton.setOnClickListener(this);
+        hardwareButton=(Button)view.findViewById(R.id.btn_hardware);
+        hardwareButton.setOnClickListener(this);
+        cpuButton=(Button)view.findViewById(R.id.btn_cpu);
+        cpuButton.setOnClickListener(this);
+        deviceIdButton=(Button)view.findViewById(R.id.btn_device_id);
+        deviceIdButton.setOnClickListener(this);
         return view;
     }
 
@@ -71,9 +80,20 @@ public class TestFirstFragment extends BaseFragment implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if(view.getId()==button.getId()){
-            Bundle bundle=new Bundle();
-            ((HomePageActivity)context).addSecondFragment(TestFirstFragment.class,bundle,null);
+        int id=view.getId();
+        if(id==screenButton.getId()){
+
+        }else if(id==systemButton.getId()){
+
+        }else if(id==hardwareButton.getId()){
+
+        }else if(id==cpuButton.getId()){
+
+        }else if(id==networkButton.getId()){
+
+        }else if(id==deviceIdButton.getId()){
+            DeviceUtil.getDeviceId(getActivity().getApplication());
+
         }
     }
 }

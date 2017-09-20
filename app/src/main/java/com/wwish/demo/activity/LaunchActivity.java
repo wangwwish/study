@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import com.wwish.aspectj.annotation.DebugTrace;
 import com.wwish.demo.R;
 import com.wwish.frame.activity.BaseActivity;
+import com.wwish.frame.utils.GLog;
 
 /**
  * Created by wangwei-ds10 on 2017/8/31.
@@ -24,10 +25,13 @@ public class LaunchActivity extends BaseActivity {
     public static int TIME_ANIMATION=1000;
     ImageView logo = null;
     @Override
+    @DebugTrace
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        GLog.d(TAG,"onCreate");
         setContentView(R.layout.launch);
         initView();
+//        testJump();
         useAnimator();
     }
     @DebugTrace
@@ -38,11 +42,44 @@ public class LaunchActivity extends BaseActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        GLog.d(TAG,"onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        GLog.d(TAG,"onResume");
+//        testJump();
+    }
+
+    private void testJump() {
+        Intent it = new Intent(LaunchActivity.this, HomePageActivity.class);
+        startActivity(it);
+        finish();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        GLog.d(TAG,"onStop");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        GLog.d(TAG,"onPause");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        GLog.d(TAG,"onDestroy");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        GLog.d(TAG,"onRestart");
     }
 
     private void useAnimator() {
@@ -79,9 +116,7 @@ public class LaunchActivity extends BaseActivity {
         @Override
         public void handleMessage(Message msg) {
             //test
-            Intent it = new Intent(LaunchActivity.this, HomePageActivity.class);
-            startActivity(it);
-            finish();
+            testJump();
         }
     };
 }

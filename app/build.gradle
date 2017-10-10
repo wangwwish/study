@@ -2,6 +2,7 @@ import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
 import org.aspectj.tools.ajc.Main
 apply plugin: 'com.android.application'
+apply from: '../config/quality.gradle'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion as Integer

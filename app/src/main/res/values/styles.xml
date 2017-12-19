@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="AppSplash" parent="android:Theme">
-        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:windowBackground">@mipmap/bg_splash</item>
         <item name="android:windowNoTitle">true</item>
     </style>
 

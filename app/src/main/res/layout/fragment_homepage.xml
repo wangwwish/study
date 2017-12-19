@@ -22,7 +22,7 @@
                 android:layout_width="60dip"
                 android:layout_height="44dip"
                 android:scaleType="fitXY"
-                android:src="@drawable/hp_button_right" />
+                android:src="@mipmap/hp_button_right" />
 
             <ImageView
                 android:id="@+id/main_desk_title_more_new_flag"
@@ -32,7 +32,7 @@
                 android:layout_marginRight="21dip"
                 android:layout_marginTop="9dip"
                 android:scaleType="fitXY"
-                android:src="@drawable/ic_red_dot"
+                android:src="@mipmap/ic_red_dot"
                 android:visibility="gone" />
         </FrameLayout>
 
@@ -64,7 +64,7 @@
                 android:layout_marginRight="5dip"
                 android:layout_marginTop="12dip"
                 android:scaleType="fitXY"
-                android:src="@drawable/ic_red_dot"
+                android:src="@mipmap/ic_red_dot"
                 android:visibility="gone" />
         </FrameLayout>
 
@@ -104,7 +104,7 @@
                 android:layout_marginRight="5dip"
                 android:layout_marginTop="12dip"
                 android:scaleType="fitXY"
-                android:src="@drawable/ic_red_dot"
+                android:src="@mipmap/ic_red_dot"
                 android:visibility="gone" />
         </FrameLayout>
 
@@ -118,7 +118,7 @@
             android:layout_width="60dip"
             android:layout_height="44dip"
             android:scaleType="fitXY"
-            android:src="@drawable/hp_button_right" />
+            android:src="@mipmap/hp_button_right" />
     </LinearLayout>
 
     <com.wwish.frame.viewpager.BaseViewPager

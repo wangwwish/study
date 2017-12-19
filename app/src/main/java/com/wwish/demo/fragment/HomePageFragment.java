@@ -111,7 +111,7 @@ public class HomePageFragment extends BaseFragment implements PageIndexer {
         TestFirstFragment fragment1 = new TestFirstFragment();
         baseFragments[0] = fragment1;
         fragment1.setRetainInstance(true);
-        TestThirdFragment fragment2 = new TestThirdFragment();
+        TestSecondFragment fragment2 = new TestSecondFragment();
         fragment2.setRetainInstance(true);
 //        fragment2.setBg(Color.RED);
         baseFragments[1] = fragment2;
